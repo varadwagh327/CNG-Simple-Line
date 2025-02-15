@@ -8,7 +8,7 @@ export const UserRegister = catchAsyncError(async (req, res, next) => {
     const { firstName, lastName, email, phone, password, role } = req.body;
 
     if (!firstName || !lastName || !email || !phone || !password || !role) {
-        return next(new ErrorHandler("Please fill out the entire form!", 400));
+        return next(new ErrorHandler("Please fill out the entire Form!", 400));
     }
 
     let user = await User.findOne({ email });
