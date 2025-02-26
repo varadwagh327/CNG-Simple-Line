@@ -8,31 +8,35 @@ const Footer = () => {
     {
       id: 1,
       day: "Monday",
-      time: "9:00 AM - 11:00 PM",
+      time: "8:00 AM - 12:00 PM",
     },
     {
       id: 2,
       day: "Tuesday",
-      time: "12:00 PM - 12:00 AM",
+      time: "8:00 PM - 12:00 AM",
     },
     {
       id: 3,
       day: "Wednesday",
-      time: "10:00 AM - 10:00 PM",
+      time: "08:00 AM - 12:00 PM",
     },
     {
       id: 4,
       day: "Thursday",
-      time: "9:00 AM - 9:00 PM",
+      time: "8:00 AM - 12:00 PM",
     },
     {
       id: 5,
       day: "Monday",
-      time: "3:00 PM - 9:00 PM",
+      time: "8:00 PM - 12:00 PM",
     },
     {
       id: 6,
       day: "Saturday",
+      time: "9:00 AM - 3:00 PM",
+    },{
+      id: 7,
+      day: "Sunday",
       time: "9:00 AM - 3:00 PM",
     },
   ];

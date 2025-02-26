@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import Address from "./Address.jsx"
 
 const BookingForm = () => {
   const [firstName, setFirstName] = useState("");
@@ -57,7 +58,8 @@ const BookingForm = () => {
   return (
     <>
       <div className="container form-component appointment-form">
-      <h1>Vighnaharta CNG Gas</h1>
+        <Address/>
+      <h1>Shevantai CNG Gas</h1>
         <h2>Booking</h2>
         <form onSubmit={handleAppointment}>
           <div>

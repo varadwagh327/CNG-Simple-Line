@@ -43,10 +43,10 @@ function App() {
       <Routes>
         <Route path='/' element={<Dashboard/>} />
         <Route path='/Login' element={<Login/>} />
-        <Route path='/doctor/addnew' element={<AddNewPump/>} />
+        <Route path='/pump/addnew' element={<AddNewPump/>} />
         <Route path='/admin/addnew' element={<AddNewAdmin/>} />
         <Route path='/messages' element={<Messages/>} />
-        <Route path='/doctors' element={<Pumps/>} />
+        <Route path='/pumps' element={<Pumps/>} />
       </Routes>
       <ToastContainer position="top-center" />
     </Router>

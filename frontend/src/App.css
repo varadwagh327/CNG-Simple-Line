@@ -7,7 +7,7 @@
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: #e5e5e5;
+  background: #3bf38e;
 }
 .btn {
   padding: 7px 20px;
@@ -331,7 +331,7 @@ footer .content div ul {
   gap: 10px;
 }
 footer .content div ul a {
-  color: gray;
+  color: rgb(20, 3, 3);
   text-decoration: none;
 }
 footer .content div ul a:hover {
@@ -339,7 +339,7 @@ footer .content div ul a:hover {
   transition: 0.3s;
 }
 footer .content div ul li span {
-  color: gray;
+  color: rgb(22, 4, 4);
 }
 footer .content div ul li span:first-child {
   width: 150px;
@@ -586,4 +586,25 @@ input[type="time"]:before {
 }
 footer .logo-img{
   width: 100%;
+}
+.centerOr{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} .custom-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px; /* px-6 py-3 */
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+  color: white; /* text-white */
+  background-color: #16a34a; /* bg-green-600 */
+  border-radius: 9999px; /* rounded-full */
+  transition: background-color 0.3s; /* transition-colors duration-300 */
+  width:400px;
+}
+
+.custom-button:hover {
+  background-color: #15803d; /* hover:bg-green-700 */
 }

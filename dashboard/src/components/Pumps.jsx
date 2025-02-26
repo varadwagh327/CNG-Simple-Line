@@ -34,7 +34,7 @@ const Pumps = () => {
             return (<>
               <div className="card">
                 <img
-                  src={element.docAvatar && element.docAvatar.url}
+                  src={element.pumpAvatar && element.pumpAvatar.url}
                   alt="CNG avatar"
                 />
                 <h4>{`${element.firstName} ${element.lastName}`}</h4>

@@ -3,7 +3,6 @@ import { TiHome } from "react-icons/ti";
 import { RiLogoutBoxFill } from "react-icons/ri";
 import { AiFillMessage } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { FaUserDoctor } from "react-icons/fa6";
 import { MdAddModerator } from "react-icons/md";
 import { IoPersonAddSharp } from "react-icons/io5";
 import axios from "axios";
@@ -11,6 +10,8 @@ import { toast } from "react-toastify";
 import { Context } from "../index";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
+import { FaGasPump } from "react-icons/fa";
+
 
 const Sidebar = () => {
   const [show, setShow] = useState(false);
@@ -37,16 +38,16 @@ const Sidebar = () => {
     navigateTo("/");
     setShow(!show);
   };
-  const gotoDoctorsPage = () => {
-    navigateTo("/doctors");
+  const gotoPumpsPage = () => {
+    navigateTo("/pumps");
     setShow(!show);
   };
   const gotoMessagesPage = () => {
     navigateTo("/messages");
     setShow(!show);
   };
-  const gotoAddNewDoctor = () => {
-    navigateTo("/doctor/addnew");
+  const gotoAddNewPump = () => {
+    navigateTo("/pump/addnew");
     setShow(!show);
   };
   const gotoAddNewAdmin = () => {
@@ -62,9 +63,9 @@ const Sidebar = () => {
       >
         <div className="links">
           <TiHome onClick={gotoHomePage} />
-          <FaUserDoctor onClick={gotoDoctorsPage} />
+          <FaGasPump onClick={gotoPumpsPage} />
           <MdAddModerator onClick={gotoAddNewAdmin} />
-          <IoPersonAddSharp onClick={gotoAddNewDoctor} />
+          <IoPersonAddSharp onClick={gotoAddNewPump} />
           <AiFillMessage onClick={gotoMessagesPage} />
           <RiLogoutBoxFill onClick={handleLogout} />
         </div>
