@@ -39,7 +39,7 @@ export const postBooking = catchAsyncError(async(req, res, next) => {
         booking_date,
         time,
         address,
-        UserId: req.user._id // Assuming the patient is the logged-in user
+        UserId: req.user._id // Assuming the user is the logged-in user
     });
 
     res.status(201).json({
